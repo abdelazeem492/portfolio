@@ -371,9 +371,11 @@ header .navbar ul li a:hover {
 .caption p {
   font-size: 14px;
   /* padding-top: 5px; */
-  padding: 10px 0;
+  padding: 10px 20px;
+  /* margin-right: auto; */
   font-weight: bold;
-  width: fit-content;
+  width: 100%;
+  text-align: center;
 }
 
 .box:hover .caption {
