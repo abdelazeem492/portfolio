@@ -2,12 +2,6 @@
 
 :root {
   --yellow: #f9ca24;
-  --bodyColor: #111;
-  --textColor: #fff;
-  --pColor: #eee;
-  --btnBColor: #333;
-  --btnTColor: #fff;
-  --headerColor: #1a1a1a;
 }
 
 * {
@@ -24,7 +18,7 @@
 
 *::selection {
   background: var(--yellow);
-  color: var(--btnBColor);
+  color: #333;
 }
 
 html {
@@ -45,7 +39,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: var(--bodyColor);
+  background: #111;
   overflow-x: hidden;
   padding-left: 35rem;
 }
@@ -61,8 +55,8 @@ section.education {
 
 .btn {
   padding: 0.7rem 3rem;
-  background: var(--btnBColor);
-  color: var(--btnTColor);
+  background: #333;
+  color: #fff;
   cursor: pointer;
   margin-top: 1rem;
   font-size: 2rem;
@@ -84,8 +78,8 @@ section.education {
   margin: 0 6rem;
   font-size: 5rem;
   padding: 1rem;
-  border-bottom: 0.1rem solid var(--textColor);
-  color: var(--textColor);
+  border-bottom: 0.1rem solid #fff4;
+  color: #fff;
 }
 
 .heading span {
@@ -99,7 +93,7 @@ header {
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: var(--headerColor);
+  background: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,17 +108,16 @@ header .user img {
   object-fit: cover;
   margin-bottom: 1rem;
   border: 0.7rem solid var(--yellow);
-  margin-top: 40px;
 }
 
 header .user .name {
   font-size: 3.5rem;
-  color: var(--textColor);
+  color: #fff;
 }
 
 header .user .post {
   font-size: 2rem;
-  color: var(--pColor);
+  color: #eee;
 }
 
 header .navbar {
@@ -140,8 +133,8 @@ header .navbar ul li a {
   display: block;
   padding: 1rem;
   margin: 1.5rem 0;
-  background: var(--btnBColor);
-  color: var(--textColor);
+  background: #333;
+  color: #fff;
   font-size: 2rem;
   border-radius: 5rem;
 }
@@ -157,7 +150,7 @@ header .navbar ul li a:hover {
 }
 
 .social a {
-  color: var(--btnBColor);
+  color: #333;
   font-size: 26px;
 }
 
@@ -165,12 +158,12 @@ header .navbar ul li a:hover {
   color: var(--yellow);
 }
 
-#menubar {
+#menu {
   position: fixed;
   top: 2rem;
   right: 2rem;
-  background: var(--btnBColor);
-  color: var(--textColor);
+  background: #333;
+  color: #fff;
   cursor: pointer;
   font-size: 2.5rem;
   padding: 1rem 1.5rem;
@@ -187,12 +180,12 @@ header .navbar ul li a:hover {
 
 .home h3 {
   font-size: 2.5rem;
-  color: var(--textColor);
+  color: #fff;
 }
 
 .home h1 {
   font-size: 5rem;
-  color: var(--textColor);
+  color: #fff;
 }
 
 .home h1 span {
@@ -201,7 +194,7 @@ header .navbar ul li a:hover {
 
 .home p {
   font-size: 2rem;
-  color: var(--pColor);
+  color: #eee;
   padding: 1rem 0;
 }
 
@@ -227,7 +220,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .info h3 span {
-  color: var(--pColor);
+  color: #eee;
   padding: 0 0.5rem;
 }
 
@@ -253,7 +246,7 @@ header .navbar ul li a:hover {
 
 .about .row .counter .box h3 {
   font-size: 2rem;
-  color: var(--textColor);
+  color: #fff;
 }
 
 .education .box-container {
@@ -270,27 +263,27 @@ header .navbar ul li a:hover {
   width: 27rem;
   margin: 4rem 1rem;
   padding-left: 2rem;
-  border-left: 0.2rem solid var(--textColor);
+  border-left: 0.2rem solid #fff;
   position: relative;
 }
 
 .education .box-container .box span {
   font-size: 1.3rem;
   background: #222;
-  color: var(--textColor);
+  color: #fff;
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
 }
 
 .education .box-container .box h3 {
   font-size: 2rem;
-  color: var(--textColor);
+  color: #fff;
   padding-top: 1.5rem;
 }
 
 .education .box-container .box p {
   font-size: 1.6rem;
-  color: var(--pColor);
+  color: #eee;
   padding: 1rem 0;
 }
 
@@ -304,7 +297,7 @@ header .navbar ul li a:hover {
   line-height: 5rem;
   text-align: center;
   font-size: 2rem;
-  color: var(--textColor);
+  color: #fff;
   background: var(--yellow);
 }
 
@@ -378,11 +371,9 @@ header .navbar ul li a:hover {
 .caption p {
   font-size: 14px;
   /* padding-top: 5px; */
-  padding: 10px 20px;
-  /* margin-right: auto; */
+  padding: 10px 0;
   font-weight: bold;
-  width: 100%;
-  text-align: center;
+  width: fit-content;
 }
 
 .box:hover .caption {
@@ -412,8 +403,8 @@ header .navbar ul li a:hover {
 .contact .row form .box {
   padding: 1.5rem;
   margin: 1rem 0;
-  background: var(--btnBColor);
-  color: var(--textColor);
+  background: #3333;
+  color: #fff;
   text-transform: none;
   font-size: 1.7rem;
   width: 100%;
@@ -430,7 +421,7 @@ header .navbar ul li a:hover {
 
 .contact .row .content .title {
   text-transform: uppercase;
-  color: var(--textColor);
+  color: #fff;
   font-size: 3rem;
   padding-bottom: 2rem;
 }
@@ -439,10 +430,9 @@ header .navbar ul li a:hover {
   display: flex;
   align-items: center;
   font-size: 2rem;
-  color: var(--pColor);
+  color: #eee;
   padding: 1rem 0;
   font-weight: normal;
-  text-transform: none;
 }
 
 .contact .row .content .info h3 i {
@@ -475,7 +465,7 @@ header .navbar ul li a:hover {
     left: -120%;
   }
 
-  #menubar {
+  #menu {
     display: block;
   }
 
@@ -522,122 +512,5 @@ header .navbar ul li a:hover {
 
   .contact .row form {
     margin: 3rem 0;
-  }
-}
-
-/* <===============================================> */
-/* DARK MODE */
-
-body.active {
-  background-color: var(--textColor);
-}
-
-.dark-button {
-  position: absolute;
-  right: 150px;
-  top: 40px;
-}
-
-#toggle {
-  position: relative;
-  display: block;
-  width: 100px;
-  height: 50px;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #222;
-  transition: 0.5s;
-  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
-    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-}
-
-#toggle.active {
-  background-color: #eee;
-  box-shadow: inset 0 2px 100px rgba(0, 0, 0, 0.1),
-    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 8px rgba(0, 0, 0, 0.05);
-}
-
-#toggle .indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(to bottom, #444, #222);
-  border-radius: 50%;
-  transform: scale(0.9);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
-    inset 0 4px 4px rgba(255, 255, 255, 0.2),
-    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
-  transition: 0.5s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-#toggle.active .indicator {
-  left: 50px;
-  background: linear-gradient(to bottom, #eaeaea, #f7f7f7);
-  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.1),
-    inset 0 4px 4px rgba(255, 255, 255, 1),
-    inset 0 -4px 4px rgba(255, 255, 255, 1);
-}
-
-@media (max-width: 888px) {
-  .dark-button {
-    right: 30px;
-  }
-}
-
-@media (max-width: 760px) {
-  .dark-button {
-    right: 30px;
-  }
-
-  #toggle {
-    margin: 30px !important;
-    width: 70px;
-    height: 35px;
-    border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
-  }
-
-  #toggle .indicator {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-@media (max-width: 575px) {
-  .dark-button {
-    right: 10px;
-    top: 70px;
-  }
-}
-
-@media (max-width: 454px) {
-  .dark-button {
-    right: 0px;
-    top: 70px;
-  }
-}
-@media (max-width: 444px) {
-  .dark-button {
-    right: 10px;
-    top: 50px;
-  }
-}
-@media (max-width: 380px) {
-  .dark-button {
-    right: 10px;
-    top: 25px;
   }
 }
