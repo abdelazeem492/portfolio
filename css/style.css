@@ -13,7 +13,11 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 
 *::selection {
@@ -166,7 +170,7 @@ header .navbar ul li a:hover {
   color: #fff;
   cursor: pointer;
   font-size: 2.5rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
   z-index: 1000;
   display: none;
 }
@@ -463,6 +467,7 @@ header .navbar ul li a:hover {
 @media (max-width: 991px) {
   header {
     left: -120%;
+    width: 50vw;
   }
 
   #menu {
