@@ -1,21 +1,9 @@
-let menu = document.querySelector("#menu");
-let header = document.querySelector("header");
-
-function toggle() {
-  header.classList.toggle("toggle");
-  $("#menu").toggleClass("fa-solid fa-xmark");
-  $("#menu").toggleClass("fas fa-bars");
-}
-
 $(document).ready(function () {
-  // $("#menu").click(function () {
-  //   // $("#menu").removeClass("fa-solid fa-xmark");
-
-  //   $("header").toggleClass("toggle");
-  // });
+  $("#menubar").click(function () {
+    $("header").toggleClass("toggle");
+  });
 
   $(window).on("scroll load", function () {
-    $("#menu").toggleClass("fas fa-bars");
     $("header").removeClass("toggle");
 
     if ($(window).scrollTop() > 0) {
